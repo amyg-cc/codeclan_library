@@ -26,6 +26,10 @@ library = {
 
 # TODO - Print welcome statement including library name
 
+print("***********************************")
+print(f'* Welcome to the {library["name"]} *')
+print("***********************************")
+
 option = ""
 while option != "q":
     print("Options:")
