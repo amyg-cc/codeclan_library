@@ -24,11 +24,9 @@ library = {
     ]
 }
 
-# TODO - Print welcome statement including library name
-
-print("***********************************")
-print(f'* Welcome to the {library["name"]} *')
-print("***********************************")
+from art import *
+Art=text2art(f'{library["name"]}') # Return ascii text (default font) and default chr_ignore=True 
+print(Art)
 
 option = ""
 while option != "q":
