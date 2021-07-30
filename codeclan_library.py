@@ -42,6 +42,7 @@ while option != "q":
     if option == "1":
         print("Listing all books...")
         # TODO - List all books
+        print(f'The books we habe available are... {library["books"]}')
 
     if option == "2":
         print("Searching for a book by title...")
