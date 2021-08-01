@@ -60,7 +60,7 @@ while option != "q":
         
     if option == "3":
         print("Adding a book...")
-        book_title = input("Enter the book title you wish to add: ")
+        book_title = input("What is the title of the book you with to add?: ")
         book_author = input("Who is the author of that book?: ")
         book_addition = {"title": book_title, "author": book_author}
         library["books"].append(book_addition)
@@ -79,6 +79,18 @@ while option != "q":
         else:
             print(f"We couldn't find {delete_request} in our Library.")
 
-    if option == "5":
-        print("Updating a book...")
-        # TODO - Update a book
+# COMMENTED OUT AS I CAN'T GET THIS WORKING
+
+    # if option == "5":
+        # print("Updating a book...")
+        # # TODO - Update a book
+        # update_request = input("What is the title of the book you with to update?: ")
+        # update_request_valid = False
+        # for book in library["books"]:
+        #     if update_request == book["title"]:
+        #         update_request_valid = True
+        #         update_selection = book
+        # if update_request_valid ==True:
+        #     updated_title = input("What is the new title?: ")
+        #     updated_author = input("What is the new author?: ")
+        #     book.update("title": updated_title, "author": updated_author)
