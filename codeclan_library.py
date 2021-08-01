@@ -24,9 +24,9 @@ library = {
     ]
 }
 
-# from art import *
-# Art=text2art(f'{library["name"]}') # Return ascii text (default font) and default chr_ignore=True 
-# print(Art)
+from art import *
+Art=text2art(f'{library["name"]}') # Return ascii text (default font) and default chr_ignore=True 
+print(Art)
 
 option = ""
 while option != "q":
@@ -79,11 +79,8 @@ while option != "q":
         else:
             print(f"We couldn't find {delete_request} in our Library.")
 
-# COMMENTED OUT AS I CAN'T GET THIS WORKING
-
-    if option == "5":
+if option == "5":
         print("Updating a book...")
-        # TODO - Update a book
         update_request = input("What is the title of the book you wish to update?: ")
         update_request_valid = False
         for book in library["books"]:
