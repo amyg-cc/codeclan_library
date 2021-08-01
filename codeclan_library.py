@@ -45,7 +45,7 @@ while option != "q":
 
     if option == "2":
         print("Searching for a book by title...")
-        search = input("Input the Title of the book you're looking for: ")
+        search = input("What is the title of the book you're looking for?: ")
         book_exists = False
         for book in library["books"]:
             if search == book["title"]:
@@ -81,16 +81,16 @@ while option != "q":
 
 # COMMENTED OUT AS I CAN'T GET THIS WORKING
 
-    # if option == "5":
-        # print("Updating a book...")
-        # # TODO - Update a book
-        # update_request = input("What is the title of the book you with to update?: ")
-        # update_request_valid = False
-        # for book in library["books"]:
-        #     if update_request == book["title"]:
-        #         update_request_valid = True
-        #         update_selection = book
-        # if update_request_valid ==True:
-        #     updated_title = input("What is the new title?: ")
-        #     updated_author = input("What is the new author?: ")
-        #     book.update("title": updated_title, "author": updated_author)
+    if option == "5":
+        print("Updating a book...")
+        # TODO - Update a book
+        update_request = input("What is the title of the book you wish to update?: ")
+        update_request_valid = False
+        for book in library["books"]:
+            if update_request == book["title"]:
+                update_request_valid = True
+                update_selection = book
+        if update_request_valid == True:
+            updated_title = input("What is the new title?: ")
+            updated_author = input("Who is the new author?: ")
+            book.update({"title": updated_title, "author": updated_author})
