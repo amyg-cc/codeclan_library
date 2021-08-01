@@ -79,7 +79,9 @@ while option != "q":
         else:
             print(f"We couldn't find {delete_request} in our Library.")
 
-if option == "5":
+# OPTION 5 DOESN'T WORK...
+
+    if option == "5":
         print("Updating a book...")
         update_request = input("What is the title of the book you wish to update?: ")
         update_request_valid = False
