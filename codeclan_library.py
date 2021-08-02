@@ -85,6 +85,7 @@ while option != "q":
         print("Updating a book...")
         update_request = input("What is the title of the book you wish to update?: ")
         update_request_valid = False
+        update_selection = None
         for book in library["books"]:
             if update_request == book["title"]:
                 update_request_valid = True
@@ -92,4 +93,5 @@ while option != "q":
         if update_request_valid == True:
             updated_title = input("What is the new title?: ")
             updated_author = input("Who is the new author?: ")
-            book.update({"title": updated_title, "author": updated_author})
+            update_selection["title"] = updated_title
+            update_selection["author"] = updated_author
